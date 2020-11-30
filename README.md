@@ -1,2 +1,2 @@
 # hash_code_sample_problems
-Solving sample problems from Google Hash Code tournament.
+Solving coding problems from popular interview questions, coding tournaments and competitive coding platforms.
