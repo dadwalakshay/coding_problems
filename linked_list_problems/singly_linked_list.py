@@ -69,6 +69,28 @@ class SinglyLinkedList(BaseLinkedList):
 
         return
 
+    def reverse(self):
+        # Reverses the Nodes of LinkedList in-place.
+        new_head = self.tail
+
+        current_tail = self.tail
+
+        current_node = self.head
+
+        while self.head.next:
+            if current_node.next != current_tail:
+                current_node = current_node.next
+            else:
+                current_tail.next = current_node
+
+                current_tail = current_node
+
+                current_tail.next = None
+
+                current_node = self.head
+
+        self.head = new_head
+
     @property
     def tail(self):
         # Traverses the LinkedList and returns tail Node.
