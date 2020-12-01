@@ -1,1 +1,3 @@
+# Ignore Python complied directory and files
 __pycache__/
+*.pyc
